@@ -4,6 +4,7 @@ import com.example.employee.models.Department;
 import com.example.employee.models.Employee;
 import com.example.employee.services.DepartmentService;
 import com.example.employee.services.EmployeeService;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
+@Slf4j
 @RestController
 public class ApiController {
     Logger LOGGER = LoggerFactory.getLogger(ApiController.class);
