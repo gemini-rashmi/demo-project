@@ -71,7 +71,17 @@ public class Department {
         this.isDeleted = false;
     }
 
-    public Department(long l, String hr, String s, int i, int i1, boolean b, boolean b1, Object o) {
+
+
+    public Department(Long deptId, String deptName, String deptDescription, int createdBy, int updatedBy, boolean isActive, boolean isDeleted, Set<Employee> employees) {
+        this.deptId = deptId;
+        this.deptName = deptName;
+        this.deptDescription = deptDescription;
+        this.createdBy = createdBy;
+        this.updatedBy = updatedBy;
+        this.isActive = isActive;
+        this.isDeleted = isDeleted;
+        this.employees = employees;
     }
 
     @Override
